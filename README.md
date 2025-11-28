@@ -1,4 +1,5 @@
 Servicios con Circuit Breaker
+
 Un Circuit Breaker es un patrón de diseño utilizado en sistemas distribuidos para mejorar la resiliencia y la estabilidad de la aplicación. Su propósito principal es manejar fallos temporales de forma más eficiente y evitar que fallos en un componente se propaguen y causen fallos en cadena en todo el sistema. Un Circuit Breaker actúa como un interruptor entre el cliente y el servicio que está siendo llamado. Este interruptor puede estar en uno de los tres estados:
 
 Closed: Las solicitudes pasan libremente al servicio objetivo. Si el servicio responde con éxito, el estado permanece cerrado. Sin embargo, si se detectan un número configurable de fallos consecutivos, el interruptor cambia al estado abierto.
